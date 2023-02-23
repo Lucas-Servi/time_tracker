@@ -48,5 +48,5 @@ async def stats(ctx):
         message += f"{member.display_name}: {total_time:.2f} seconds\n"
     await ctx.send(message)
 
-bot.run('MTA3ODQ1MzEyNTMwNTg2ODQyOQ.GLMHby.Up1qQUmYXhXCH9OUvRa5Q6Rz-P4jNAtzrq4D7w')
+bot.run("")
 
