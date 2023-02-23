@@ -3,7 +3,10 @@ from discord.ext import commands
 import time
 from datetime import datetime, timedelta
 
-bot = commands.Bot(command_prefix='!')
+intents = discord.Intents.all()
+intents.members = True
+
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 # A dictionary to store the start times for each user in a voice channel
 start_times = {}
@@ -45,5 +48,5 @@ async def stats(ctx):
         message += f"{member.display_name}: {total_time:.2f} seconds\n"
     await ctx.send(message)
 
-bot.run('MTA3ODQ1MzEyNTMwNTg2ODQyOQ.GtBjdX.YkH0M_pzfuR9sdjPZRqMaM3mUkhwOTrNegQYKY')
+bot.run('MTA3ODQ1MzEyNTMwNTg2ODQyOQ.GLMHby.Up1qQUmYXhXCH9OUvRa5Q6Rz-P4jNAtzrq4D7w')
 
